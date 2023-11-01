@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1000 cartons of biscuits</title>
+</head>
+<style>
+     html,body{
+        overflow-x: hidden;
+    }
+    #both{
+        width: 100%; 
+        height: 50%;
+         background: url(image/1697107354405.jpg); 
+        background-repeat: no-repeat;
+         background-size: 100% 100%;
+    }
+    @media screen and (max-width:475px) {
+        #both{
+            width: 100%; 
+           height: 30%;
+        }
+    }
+</style>
+<body style="margin: 0; padding: 0; box-sizing: border-box;">
+    <div id="both"> <h1 style=" color: rgb(243, 240, 240); margin-left:20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  padding-top: 50px;">Lyrics of the song 1000 cartons of biscuits</h1></div>
+    <div id="display" style="background-color: rgb(158, 158, 247);"><h2 style="margin-top: 0px; color: red; margin-left:20px;">Lyrics of the song 1000 cartons of biscuits</h2></div>
+    <script>
+        // var bottles;
+        // var bottleLeft;
+        for( var i=1000; i>=0; i--){
+
+           if(i==i && i!=1 && i!=2 && i!=0){
+                  display.innerHTML += `<h1 style=" font-weight:400; font-size:15px; margin-top:0px; margin-left:20px; " > ${i} cartons of biscuits on the wall,  ${i} cartons of biscuits. <br>Take one down and pass it around,  ${ i -1 } cartons of biscuits on the wall.</h1>`
+                }
+ 
+            else if(i==1 ){
+                  display.innerHTML += `<h1 style="font-weight:400;font-size:15px; margin-top:0px; margin-left:20px;"  > ${i} carton of biscuit on the wall,  ${i} carton of biscuit.<br> Take one down and pass it around, no carton of biscuit on the wall.</h1>`
+               }
+            else if (i==2 ){
+                display.innerHTML += `<h1 style="font-weight:400;font-size:15px; margin-top:0px; margin-left:20px;" > ${i} carton of biscuit on the wall,  ${i} cartons of biscuits.<br>Take one down and pass it around, ${ i -1 } carton of biscuit on the wall.</h1>`  
+             }
+             else if (i==0){
+                
+                display.innerHTML += `<h1 style="font-weight:400;font-size:15px; margin-top:0px; margin-left:20px;"  >  No more  cartons of biscuits on the wall, no more  cartons of biscuits.<br> Go to the store and buy some more, ${ i + 999 } cartons of biscuit on the wall. </h1>` 
+             }
+
+        //    else {
+        //        bottles="bottles" ;
+        //        bottleLeft=i-1 +"bottles of beer on the wall";
+        //     } 
+        //     console.log(i +""+bottles+" of beer on the wall");
+        //     console.log(i +""+bottles+" of beer ");
+        //     console.log("take one down ,pass it around");
+        //    console.log(bottleLeft);
+        }
+    </script>
+</body>
+</html> 
+ 
